@@ -16,6 +16,7 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"ProfessionalService","name":"Lavelex Business Solutions","url":"https://lavelex.com/","telephone":"+971502026929","email":"info@lavelex.com","address":{"@type":"PostalAddress","streetAddress":"Office Tower, Floor 22, Sheraton Grand Hotel, Sheikh Zayed Road","addressLocality":"Dubai","addressCountry":"AE"}}
 </script>
+<script>document.documentElement.classList.add("js")</script>
 <style>
 :root{--ink:#0D2B21;--forest:#0B7A52;--lime:#76CC00;--mist:#EDF3EE;--line:#D5E2D9;--text:#22352D;--white:#fff}
 *{box-sizing:border-box;margin:0;padding:0}
@@ -69,6 +70,10 @@ h2{font-size:clamp(1.8rem,4vw,2.5rem);line-height:1.15;margin-bottom:14px}
 .steps h3{font-size:1.2rem;margin:6px 0}
 
 
+.ico{width:54px;height:54px;display:grid;place-items:center;font-size:1.8rem;background:var(--mist);border-radius:10px;margin-bottom:14px}
+.js .rv{opacity:0;transform:translateY(24px);transition:opacity .65s ease,transform .65s ease}
+.js .rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.js .rv{opacity:1;transform:none;transition:none}}
 #team .grid{grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:34px}
 .person{border-top:2px solid var(--ink);padding-top:18px}
 .person h3{font-size:1.6rem}
@@ -138,14 +143,14 @@ footer{background:#081E17;color:#9FB8AC;font-size:.88rem;padding:20px 0}
    <h2>What we do</h2>
    <p class="lead">Eight services, one point of contact. Pick one or combine them.</p>
    <div class="grid">
-    <div class="tile"><h3>Website development</h3><p>Fast, mobile-friendly websites for local businesses, with search engine basics built in from day one.</p></div>
-    <div class="tile"><h3>Digital marketing</h3><p>Search, social media and paid ad campaigns that bring in enquiries you can count.</p></div>
-    <div class="tile"><h3>Graphic designing</h3><p>Logos, brochures, social posts and signage that look consistent everywhere your customers see you.</p></div>
-    <div class="tile"><h3>Business analysis</h3><p>We map how your business runs today, find the gaps, and list what to fix first.</p></div>
-    <div class="tile"><h3>Training and development</h3><p>Practical sessions that teach your team to use software, systems and digital tools with confidence.</p></div>
-    <div class="tile"><h3>ERP implementation</h3><p>Choosing, setting up and training your team on ERP systems such as SAP, Oracle and Microsoft Dynamics.</p></div>
-    <div class="tile"><h3>Software installation</h3><p>Licensed software installed, configured and tested on your computers and servers.</p></div>
-    <div class="tile"><h3>IT products and services</h3><p>Laptops, networking and other IT equipment sourced for you, with setup and support after delivery.</p></div>
+    <div class="tile"><div class="ico" aria-hidden="true">🌐</div><h3>Website development</h3><p>Fast, mobile-friendly websites for local businesses, with search engine basics built in from day one.</p></div>
+    <div class="tile"><div class="ico" aria-hidden="true">📈</div><h3>Digital marketing</h3><p>Search, social media and paid ad campaigns that bring in enquiries you can count.</p></div>
+    <div class="tile"><div class="ico" aria-hidden="true">🎨</div><h3>Graphic designing</h3><p>Logos, brochures, social posts and signage that look consistent everywhere your customers see you.</p></div>
+    <div class="tile"><div class="ico" aria-hidden="true">📊</div><h3>Business analysis</h3><p>We map how your business runs today, find the gaps, and list what to fix first.</p></div>
+    <div class="tile"><div class="ico" aria-hidden="true">🎓</div><h3>Training and development</h3><p>Practical sessions that teach your team to use software, systems and digital tools with confidence.</p></div>
+    <div class="tile"><div class="ico" aria-hidden="true">⚙️</div><h3>ERP implementation</h3><p>Choosing, setting up and training your team on ERP systems such as SAP, Oracle and Microsoft Dynamics.</p></div>
+    <div class="tile"><div class="ico" aria-hidden="true">💿</div><h3>Software installation</h3><p>Licensed software installed, configured and tested on your computers and servers.</p></div>
+    <div class="tile"><div class="ico" aria-hidden="true">🖥️</div><h3>IT products and services</h3><p>Laptops, networking and other IT equipment sourced for you, with setup and support after delivery.</p></div>
    </div>
   </div>
  </section>
@@ -165,12 +170,56 @@ footer{background:#081E17;color:#9FB8AC;font-size:.88rem;padding:20px 0}
  <section id="team">
   <div class="wrap">
    <h2>The people behind Lavelex</h2>
-   <p class="lead">A small team that talks to you directly.</p>
    <div class="grid">
-    <div class="person">
-     <h3>Thufail K M</h3>
-     <div class="role">Founder and CEO</div>
-     <p>Thufail leads Lavelex and works with clients on scope, quotes and delivery. He has more than five years of procurement and operations experience in the UAE, across hospitality and healthcare, managing suppliers, purchasing and materials.</p>
+    <div class="person"><h3>Thufail K M</h3><div class="role">Founder and CEO</div></div>
+    <div class="person"><h3>Jasir KP</h3><div class="role">Co-founder and CFO</div></div>
+   </div>
+  </div>
+ </section>
+
+ <section id="contact">
+  <div class="wrap">
+   <h2>Talk to us</h2>
+   <p class="lead">One number for calls and WhatsApp.</p>
+   <div class="contact">
+    <dl>
+     <dt>Call or WhatsApp</dt>
+     <dd><a class="phone" href="tel:+971502026929">+971 50 <span class="yr">2026</span> 929</a></dd>
+     <dt>General enquiries</dt>
+     <dd><a href="mailto:info@lavelex.com">info@lavelex.com</a></dd>
+     <dt>Sales</dt>
+     <dd><a href="mailto:sales@lavelex.com">sales@lavelex.com</a></dd>
+     <dt>Contact the CEO</dt>
+     <dd><a href="mailto:ceo@lavelex.com">ceo@lavelex.com</a></dd>
+     <dt>Office</dt>
+     <dd>Office Tower, Floor 22<br>Sheraton Grand Hotel, Sheikh Zayed Road<br>Near WTC Roundabout, Dubai, UAE</dd>
+    </dl>
+    <div class="cta" style="align-content:flex-start">
+     <a class="btn" href="https://wa.me/971502026929">Chat on WhatsApp</a>
+     <a class="btn ghost" href="tel:+971502026929">Call now</a>
+     <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Sheraton+Grand+Hotel+Sheikh+Zayed+Road+Dubai">Open in Maps</a>
+    </div>
+   </div>
+  </div>
+ </section>
+</main>
+
+<footer>
+ <div class="wrap">&copy; <span id="y">2026</span> Lavelex Business Solutions, Dubai, UAE</div>
+</footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+<script>
+(function(){
+ var els=document.querySelectorAll('.tile,.steps li,.person,section h2,.lead,.contact');
+ els.forEach(function(el){el.classList.add('rv');el.style.transitionDelay=(Array.prototype.indexOf.call(el.parentNode.children,el)%4)*90+'ms'});
+ if(!('IntersectionObserver' in window)){els.forEach(function(el){el.classList.add('in')});return}
+ var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+ els.forEach(function(el){io.observe(el)});
+})();
+</script>
+</body>
+</html>
+s with clients on scope, quotes and delivery. He has more than five years of procurement and operations experience in the UAE, across hospitality and healthcare, managing suppliers, purchasing and materials.</p>
      <p>He is hands-on with SAP MM, Oracle ERP and Microsoft Dynamics from the purchasing side, which shapes how Lavelex approaches ERP, business analysis and IT sourcing. BBA, Kannur University. Speaks English, Hindi, Arabic and Malayalam.</p>
     </div>
     <div class="person">

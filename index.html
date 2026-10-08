@@ -1,12 +1,218 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Lavelex</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lavelex Solutions | Websites, Marketing, ERP and IT in Dubai</title>
+<meta name="description" content="Lavelex Business Solutions in Dubai: website development, digital marketing, graphic design, business analysis, training, ERP implementation, software installation and IT products.">
+<meta property="og:title" content="Lavelex Solutions, Dubai">
+<meta property="og:description" content="Websites, marketing, ERP and IT products for businesses in the UAE.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://lavelex.com/">
+<link rel="canonical" href="https://lavelex.com/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&family=Marcellus&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"Lavelex Business Solutions","url":"https://lavelex.com/","telephone":"+971502026929","email":"info@lavelex.com","address":{"@type":"PostalAddress","streetAddress":"Office Tower, Floor 22, Sheraton Grand Hotel, Sheikh Zayed Road","addressLocality":"Dubai","addressCountry":"AE"}}
+</script>
+<style>
+:root{--ink:#0D2B21;--forest:#0B7A52;--lime:#76CC00;--mist:#EDF3EE;--line:#D5E2D9;--text:#22352D;--white:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Jost',system-ui,-apple-system,'Segoe UI',sans-serif;color:var(--text);background:var(--white);line-height:1.6;font-size:17px}
+h1,h2,h3,.wordmark{font-family:'Marcellus',Georgia,serif;font-weight:400;color:var(--ink)}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--lime);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+
+header{border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:14px;padding-bottom:14px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand svg{width:30px;height:40px}
+.wordmark{font-size:1.35rem;letter-spacing:.32em;color:var(--forest);line-height:1}
+.sub{display:block;font-family:'Jost',sans-serif;font-size:.62rem;letter-spacing:.3em;color:var(--ink);margin-top:5px}
+nav{display:flex;align-items:center;gap:22px;font-size:.95rem}
+nav a{text-decoration:none}
+nav a.link:hover{color:var(--forest)}
+.btn{display:inline-block;padding:12px 22px;font-weight:600;text-decoration:none;font-size:1rem;border:2px solid var(--forest);background:var(--forest);color:var(--white);border-radius:2px}
+.btn:hover{background:var(--ink);border-color:var(--ink)}
+.btn.ghost{background:transparent;color:var(--forest)}
+.btn.ghost:hover{background:var(--forest);color:var(--white)}
+
+.hero{padding:64px 0 72px}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(2.3rem,5.6vw,3.9rem);line-height:1.08;letter-spacing:-.01em}
+.hero p{margin:22px 0 30px;max-width:30em;font-size:1.12rem}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.bars{display:flex;justify-content:center;align-items:flex-end;gap:10px;height:340px}
+.bars i{display:block;transform-origin:bottom;animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
+.b1{width:16px;height:240px;background:#5CB800;border-radius:0 0 12px 0;animation-delay:.05s}
+.b2{width:70px;height:300px;background:var(--lime);clip-path:polygon(0 0,100% 0,100% 88%,0 100%);animation-delay:.2s}
+.b3{width:62px;height:340px;background:var(--forest);clip-path:polygon(0 4%,70% 0,100% 8%,100% 92%,0 100%);animation-delay:.35s}
+.b4{width:20px;height:230px;background:var(--forest);border-radius:0 14px 14px 0;animation-delay:.5s}
+@keyframes rise{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+
+section{padding:72px 0}
+h2{font-size:clamp(1.8rem,4vw,2.5rem);line-height:1.15;margin-bottom:14px}
+.lead{max-width:34em;margin-bottom:38px}
+#services{background:var(--mist)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.tile{background:var(--white);padding:24px 24px 26px;border-left:5px solid var(--forest)}
+.tile:nth-child(even){border-left-color:var(--lime)}
+.tile h3{font-size:1.28rem;margin-bottom:8px}
+.tile p{font-size:.98rem}
+
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:30px;list-style:none}
+.steps li{border-top:2px solid var(--ink);padding-top:16px}
+.steps b{font-family:'Marcellus',Georgia,serif;font-size:2rem;color:var(--forest);font-weight:400;display:block;line-height:1.1}
+.steps h3{font-size:1.2rem;margin:6px 0}
+
+
+#team .grid{grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:34px}
+.person{border-top:2px solid var(--ink);padding-top:18px}
+.person h3{font-size:1.6rem}
+.role{color:var(--forest);font-weight:600;margin:2px 0 12px}
+.person p+p{margin-top:10px}
+.contact dd a:not(.phone){color:var(--white);text-underline-offset:3px}
+#contact{background:var(--ink);color:#DDE9E2}
+#contact h2{color:var(--white)}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.contact dt{color:var(--lime);font-weight:600;margin-top:20px}
+.contact dt:first-child{margin-top:0}
+.phone{font-family:'Marcellus',Georgia,serif;font-size:1.9rem;color:var(--white);text-decoration:none;letter-spacing:.02em}
+.yr{color:var(--lime)}
+#contact .btn{background:var(--lime);border-color:var(--lime);color:var(--ink)}
+#contact .btn:hover{background:var(--white);border-color:var(--white)}
+#contact .btn.ghost{background:transparent;color:var(--white);border-color:var(--white)}
+#contact .btn.ghost:hover{background:var(--white);color:var(--ink)}
+footer{background:#081E17;color:#9FB8AC;font-size:.88rem;padding:20px 0}
+
+@media(max-width:760px){
+ .hero .wrap,.contact{grid-template-columns:1fr}
+ .hero{padding:36px 0 48px}
+ .bars{height:190px;order:-1;justify-content:flex-start;gap:7px}
+ .b1{width:10px;height:135px}.b2{width:44px;height:170px}.b3{width:38px;height:190px}.b4{width:12px;height:130px}
+ nav a.link{display:none}
+ .wordmark{font-size:1.1rem}
+ section{padding:52px 0}
+}
+@media(prefers-reduced-motion:reduce){.bars i{animation:none}html{scroll-behavior:auto}}
+</style>
 </head>
-<body style="font-family:sans-serif;text-align:center;padding:60px 20px">
-  <h1>Lavelex</h1>
-  <p>Websites, SEO and digital marketing for UAE businesses.</p>
-  <p>Coming soon.</p>
+<body>
+
+<header>
+ <div class="wrap">
+  <a class="brand" href="#top" aria-label="Lavelex Business Solutions">
+   <svg viewBox="0 0 60 80" aria-hidden="true"><path d="M0 16h5v48q-5-6-5-14z" fill="#5CB800"/><path d="M10 6h20v52l-20 6z" fill="#76CC00"/><path d="M34 0q10 1 14 6v66q-6 4-14 8z" fill="#0B7A52"/><path d="M52 14q5 4 5 10v26q0 6-5 8z" fill="#0B7A52"/></svg>
+   <span><span class="wordmark">LAVELEX</span><span class="sub">BUSINESS SOLUTIONS</span></span>
+  </a>
+  <nav>
+   <a class="link" href="#services">Services</a>
+   <a class="link" href="#process">How we work</a>
+   <a class="link" href="#team">Team</a>
+   <a class="link" href="#contact">Contact</a>
+   <a class="btn" href="https://wa.me/971502026929">WhatsApp</a>
+  </nav>
+ </div>
+</header>
+
+<main id="top">
+ <div class="hero">
+  <div class="wrap">
+   <div>
+    <h1>Business solutions, built for Dubai.</h1>
+    <p>Websites, marketing, ERP and IT products for companies in the UAE, from one team on Sheikh Zayed Road.</p>
+    <div class="cta">
+     <a class="btn" href="https://wa.me/971502026929">Chat on WhatsApp</a>
+     <a class="btn ghost" href="#services">See our services</a>
+    </div>
+   </div>
+   <div class="bars" aria-hidden="true"><i class="b1"></i><i class="b2"></i><i class="b3"></i><i class="b4"></i></div>
+  </div>
+ </div>
+
+ <section id="services">
+  <div class="wrap">
+   <h2>What we do</h2>
+   <p class="lead">Eight services, one point of contact. Pick one or combine them.</p>
+   <div class="grid">
+    <div class="tile"><h3>Website development</h3><p>Fast, mobile-friendly websites for local businesses, with search engine basics built in from day one.</p></div>
+    <div class="tile"><h3>Digital marketing</h3><p>Search, social media and paid ad campaigns that bring in enquiries you can count.</p></div>
+    <div class="tile"><h3>Graphic designing</h3><p>Logos, brochures, social posts and signage that look consistent everywhere your customers see you.</p></div>
+    <div class="tile"><h3>Business analysis</h3><p>We map how your business runs today, find the gaps, and list what to fix first.</p></div>
+    <div class="tile"><h3>Training and development</h3><p>Practical sessions that teach your team to use software, systems and digital tools with confidence.</p></div>
+    <div class="tile"><h3>ERP implementation</h3><p>Choosing, setting up and training your team on ERP systems such as SAP, Oracle and Microsoft Dynamics.</p></div>
+    <div class="tile"><h3>Software installation</h3><p>Licensed software installed, configured and tested on your computers and servers.</p></div>
+    <div class="tile"><h3>IT products and services</h3><p>Laptops, networking and other IT equipment sourced for you, with setup and support after delivery.</p></div>
+   </div>
+  </div>
+ </section>
+
+ <section id="process">
+  <div class="wrap">
+   <h2>How we work</h2>
+   <p class="lead">You see the full details and price before anything is bought or built.</p>
+   <ol class="steps">
+    <li><b>1</b><h3>Tell us what you need</h3><p>Message us on WhatsApp or call. A short chat is enough to start.</p></li>
+    <li><b>2</b><h3>Get a written quote</h3><p>We list exactly what is included, including any products we would purchase for you.</p></li>
+    <li><b>3</b><h3>We deliver and support</h3><p>Once you approve, we build, install or supply, then stay available for follow-up.</p></li>
+   </ol>
+  </div>
+ </section>
+
+ <section id="team">
+  <div class="wrap">
+   <h2>The people behind Lavelex</h2>
+   <p class="lead">A small team that talks to you directly.</p>
+   <div class="grid">
+    <div class="person">
+     <h3>Thufail K M</h3>
+     <div class="role">Founder and CEO</div>
+     <p>Thufail leads Lavelex and works with clients on scope, quotes and delivery. He has more than five years of procurement and operations experience in the UAE, across hospitality and healthcare, managing suppliers, purchasing and materials.</p>
+     <p>He is hands-on with SAP MM, Oracle ERP and Microsoft Dynamics from the purchasing side, which shapes how Lavelex approaches ERP, business analysis and IT sourcing. BBA, Kannur University. Speaks English, Hindi, Arabic and Malayalam.</p>
+    </div>
+    <div class="person">
+     <h3>Jasir KP</h3>
+     <div class="role">Co-founder and COO</div>
+     <p>Jasir runs day-to-day operations at Lavelex. He is a certified portfolio manager in forex and the Indian stock market, and a finance specialist.</p>
+     <p>He brings that financial discipline to how Lavelex plans costs, prices its work and keeps projects on budget.</p>
+    </div>
+   </div>
+  </div>
+ </section>
+
+ <section id="contact">
+  <div class="wrap">
+   <h2>Talk to us</h2>
+   <p class="lead">One number for calls and WhatsApp.</p>
+   <div class="contact">
+    <dl>
+     <dt>Call or WhatsApp</dt>
+     <dd><a class="phone" href="tel:+971502026929">+971 50 <span class="yr">2026</span> 929</a></dd>
+     <dt>General enquiries</dt>
+     <dd><a href="mailto:info@lavelex.com">info@lavelex.com</a></dd>
+     <dt>Sales</dt>
+     <dd><a href="mailto:sales@lavelex.com">sales@lavelex.com</a></dd>
+     <dt>Contact the CEO</dt>
+     <dd><a href="mailto:ceo@lavelex.com">ceo@lavelex.com</a></dd>
+     <dt>Office</dt>
+     <dd>Office Tower, Floor 22<br>Sheraton Grand Hotel, Sheikh Zayed Road<br>Near WTC Roundabout, Dubai, UAE</dd>
+    </dl>
+    <div class="cta" style="align-content:flex-start">
+     <a class="btn" href="https://wa.me/971502026929">Chat on WhatsApp</a>
+     <a class="btn ghost" href="tel:+971502026929">Call now</a>
+     <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&amp;query=Sheraton+Grand+Hotel+Sheikh+Zayed+Road+Dubai">Open in Maps</a>
+    </div>
+   </div>
+  </div>
+ </section>
+</main>
+
+<footer>
+ <div class="wrap">&copy; <span id="y">2026</span> Lavelex Business Solutions, Dubai, UAE</div>
+</footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
 </body>
 </html>
